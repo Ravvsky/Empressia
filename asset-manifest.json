@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/Empressia/static/css/main.455f0c5c.css",
+    "main.js": "/Empressia/static/js/main.a18f38ad.js",
+    "static/media/slider-image.png": "/Empressia/static/media/slider-image.3766a3ebd1f0d5720695.png",
+    "static/media/quote-background.png": "/Empressia/static/media/quote-background.d8af46bff3e688f5544e.png",
+    "static/media/image-travel-01.png": "/Empressia/static/media/image-travel-01.be7914eea82b2e87e9c9.png",
+    "static/media/slider1.png": "/Empressia/static/media/slider1.6c467cad8f9a35b2feb8.png",
+    "static/media/image-travel-02.png": "/Empressia/static/media/image-travel-02.45b90a49fd69bf133441.png",
+    "static/media/2.webp": "/Empressia/static/media/2.8613e2f176c23509eac6.webp",
+    "static/media/6.webp": "/Empressia/static/media/6.359769764f4ce6bb8d90.webp",
+    "static/media/5.webp": "/Empressia/static/media/5.4fed911e98705c761c1a.webp",
+    "static/media/4.webp": "/Empressia/static/media/4.6ecfdbbf07a50f26a6bd.webp",
+    "static/media/Kelson Sans Light.otf": "/Empressia/static/media/Kelson Sans Light.f5074d07bb320c913eb0.otf",
+    "static/media/3.webp": "/Empressia/static/media/3.5bfe0a477170b326063e.webp",
+    "static/media/logo.svg": "/Empressia/static/media/logo.e336c79a05f7ba7db0abfd6b481e5263.svg",
+    "static/media/slider-image1.png": "/Empressia/static/media/slider-image1.5dd9fc14425f3ab3073a.png",
+    "static/media/empressia-logo.svg": "/Empressia/static/media/empressia-logo.9fd08fc9428a5b5b764774da0b39b5a8.svg",
+    "static/media/compass.svg": "/Empressia/static/media/compass.f9bd416e24c5b0cc4df6.svg",
+    "static/media/oval.svg": "/Empressia/static/media/oval.8c64f70f0321f8871f02370f572a825d.svg",
+    "index.html": "/Empressia/index.html",
+    "static/media/chevron-left.svg": "/Empressia/static/media/chevron-left.b06921589ca5c2ab359ff511ac88858f.svg",
+    "main.455f0c5c.css.map": "/Empressia/static/css/main.455f0c5c.css.map",
+    "main.a18f38ad.js.map": "/Empressia/static/js/main.a18f38ad.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.455f0c5c.css",
+    "static/js/main.a18f38ad.js"
+  ]
+}
