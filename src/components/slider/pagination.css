@@ -1,0 +1,48 @@
+.pagi-wraper {
+    width: 100%;
+    position: absolute;
+    bottom: 15%;
+    z-index: 1;
+  }
+  
+  .pagi {
+    margin-right: 130px;
+    margin-left: 130px;
+    width: unset !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    height: 1px;
+  }
+  
+  .swiper{
+    
+    height: 90vh;
+  }
+  .swiper-pagination-bullet{
+    opacity: 1 !important;
+    background-color: #fff !important;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 0 !important
+  }
+
+  .swiper-pagination-bullet-active{
+    font-family: 'Barlow';
+    font-weight: 600;
+    background-color: white;
+    color: black;
+    height: 100% !important;
+    width: 120px !important;
+    border-radius: 40px !important;
+    text-align: center;
+    overflow: visible;
+    white-space: normal;
+    text-indent: 0%;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }

@@ -1,0 +1,22 @@
+  @font-face {
+    font-family: 'Kelson Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/public/fonts/Kelson\ Sans\ Light.otf');
+}
+
+.text{
+  font-family: 'Kelson Sans';
+font-weight: 600;
+font-size: 96px;
+line-height: 112px;
+white-space: nowrap;
+text-transform: uppercase;
+}
+.first{
+    margin-bottom: 0px;
+}
+.second{
+    margin-top: 0px;
+}
+

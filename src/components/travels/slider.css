@@ -1,0 +1,34 @@
+.arrows{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-arrow{
+    margin-left: 100px;
+}
+
+.right-arrow{
+    margin-right: 100px;
+
+}
+
+.slider-wrapper{
+    position: relative;
+    cursor: pointer;
+}
+
+.arrow{
+    width: 64px;
+    height: 64px;
+    border-radius: 50%; 
+    border: none;
+    background-color: #fff;
+    color: #4A5568;
+
+}
+

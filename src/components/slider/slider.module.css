@@ -1,0 +1,48 @@
+@font-face {
+  font-family: "Kelson Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/public/fonts/Kelson\ Sans\ Light.otf");
+}
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@500;600;700&display=swap");
+
+.container {
+  position: relative;
+  color: white;
+  height: 90vh;
+}
+.container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  
+}
+
+.wraper {
+  height: 90vh;
+}
+
+
+.content-wraper {
+  position: absolute;
+  top: 0;
+  font-family: "Kelson Sans";
+  font-weight: 600;
+  line-height: 58px;
+  z-index: 1;
+  width: 100%;
+}
+
+.topSection {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.pagi-wraper {
+  width: 100%;
+  position: absolute;
+  bottom: 15%;
+  z-index: 1;
+}

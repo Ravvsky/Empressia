@@ -1,0 +1,34 @@
+
+.title {
+  font-family: "Barlow";
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  user-select: none;
+
+}
+
+.list {
+  list-style-type: none;
+  padding: 0;
+
+}
+
+.list-item {
+  font-family: "Barlow";
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.list-item a:hover{
+  color:rgba(255, 255, 255, 0.75)
+}
+
+.list-item a{
+  text-decoration: none;
+}
+
+.navigation{
+  margin-top: 100px
+}
