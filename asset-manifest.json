@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Empressia/static/css/main.455f0c5c.css",
+    "main.css": "/Empressia/static/css/main.127f01b6.css",
     "main.js": "/Empressia/static/js/main.a18f38ad.js",
     "static/media/slider-image.png": "/Empressia/static/media/slider-image.3766a3ebd1f0d5720695.png",
     "static/media/quote-background.png": "/Empressia/static/media/quote-background.d8af46bff3e688f5544e.png",
@@ -20,11 +20,11 @@
     "static/media/oval.svg": "/Empressia/static/media/oval.8c64f70f0321f8871f02370f572a825d.svg",
     "index.html": "/Empressia/index.html",
     "static/media/chevron-left.svg": "/Empressia/static/media/chevron-left.b06921589ca5c2ab359ff511ac88858f.svg",
-    "main.455f0c5c.css.map": "/Empressia/static/css/main.455f0c5c.css.map",
+    "main.127f01b6.css.map": "/Empressia/static/css/main.127f01b6.css.map",
     "main.a18f38ad.js.map": "/Empressia/static/js/main.a18f38ad.js.map"
   },
   "entrypoints": [
-    "static/css/main.455f0c5c.css",
+    "static/css/main.127f01b6.css",
     "static/js/main.a18f38ad.js"
   ]
 }
