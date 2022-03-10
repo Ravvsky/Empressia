@@ -1,16 +1,52 @@
-import classes from './navigation.module.css'
+import styled from "styled-components";
+
+const NavigationWrapper = styled.section`
+  margin-top: 100px;
+`;
+
+const Title = styled.span`
+  font-family: "Barlow";
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  user-select: none;
+`;
+const List = styled.ul`
+  list-style-type: none;
+  padding: 0;
+`;
+
+const ListItem = styled.li`
+  font-family: "Barlow";
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 32px;
+
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  a:hover{
+    color:rgba(255, 255, 255, 0.75)
+
+  }
+`;
 const Navigation = (props) => {
+  const title = props.title;
 
-    const title = props.title
-    
-    return <section className={classes.navigation}>
-        <span className={classes.title}>{title}</span>
-        <ul className={classes.list}>
+  return (
+    <NavigationWrapper>
+      <Title>{title}</Title>
+      <List>
+        {props.links.map((item) => (
+          <ListItem key={item.id}>
+            <a href="/">{item.link}</a>
+          </ListItem>
+        ))}
+      </List>
+    </NavigationWrapper>
+  );
+};
 
-            {props.links.map((item)=> (<li className={classes['list-item']} key={item.id}><a href="/">{item.link}</a></li>))}
-          
-        </ul>
-    </section>
-}
-
-export default Navigation
+export default Navigation;
