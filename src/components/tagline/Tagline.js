@@ -13,8 +13,8 @@ const Tagline = () => {
 
   return (
       <section>
-                    <h1 className={`${classes.text} ${classes.first}`} ref={textToLeft.ref}>{text}</h1>
-                    <h1 className={`${classes.text} ${classes.second}`} ref={textToRight.ref}>{text}</h1>
+                    <h2 className={`${classes.text} ${classes.first}`} ref={textToLeft.ref}>{text}</h2>
+                    <h2 className={`${classes.text} ${classes.second}`} ref={textToRight.ref}>{text}</h2>
 
       </section>
 
