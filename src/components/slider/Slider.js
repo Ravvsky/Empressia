@@ -1,4 +1,3 @@
-import classes from "./slider.module.css";
 
 import { Pagination, A11y } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -9,13 +8,22 @@ import Topbar from "./Topbar";
 import Header from "./Header";
 import Slide from "./Slide";
 import { useSelector } from "react-redux";
+import styled from 'styled-components'
+
+const TopSection = styled.div`
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+`
+
 
 const Slider = () => {
   const language = useSelector((state) => state.language.language);
   const slidesData = useSelector((state) => state.slider.slides);
 
   return (
-    <section className={classes.container}>
+    <section>
       <Swiper
         modules={[Pagination, A11y]}
         loop={true}
@@ -30,10 +38,10 @@ const Slider = () => {
           },
         }}
       >
-        <div className={classes.topSection}>
+        <TopSection>
           <Topbar />
           <Header />
-        </div>
+        </TopSection>
 
         {slidesData.map((item, index) => (
           <SwiperSlide key={index}>
@@ -46,18 +54,7 @@ const Slider = () => {
             />
           </SwiperSlide>
         ))}
-        {/* <SwiperSlide>
-          <Slide />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Slide />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Slide />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Slide />
-        </SwiperSlide> */}
+     
         <div className="pagi-wraper">
           <div className="pagi" />
         </div>
