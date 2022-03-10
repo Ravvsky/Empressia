@@ -1,4 +1,3 @@
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleCheck } from "@fortawesome/free-regular-svg-icons";
 import "swiper/css/pagination";
@@ -19,6 +18,9 @@ const BackgroundWrapper = styled.div`
 
   > img {
     object-position: 25% 55%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 `;
 
@@ -68,7 +70,7 @@ const Keypoints = styled.div`
 const IconWrapper = styled.div`
   margin-right: 16px;
   color: #4a5568;
-  display: inline-block ;
+  display: inline-block;
 `;
 const Slide = (props) => {
   return (
@@ -87,9 +89,7 @@ const Slide = (props) => {
           {props.keypoints.map((item, index) => (
             <div key={index}>
               <IconWrapper>
-                <FontAwesomeIcon
-                  icon={faCircleCheck}
-                />
+                <FontAwesomeIcon icon={faCircleCheck} />
               </IconWrapper>
               {item}
             </div>
