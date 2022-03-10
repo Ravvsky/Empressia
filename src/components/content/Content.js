@@ -25,7 +25,7 @@ const RightSection = styled.section`
     line-height: 72px;
     max-width: 420px;
     text-transform: uppercase;
-    color: red;
+    color: #000;
   }
 
   > span {
