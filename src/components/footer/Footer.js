@@ -1,4 +1,3 @@
-import classes from "./footer.module.css";
 import Navigation from "./Navigation";
 import oval from "../../img/oval.svg";
 import arrow from "../../img/chevron-left.svg";
@@ -7,6 +6,109 @@ import { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
 import { useSelector } from "react-redux";
 import { languageActions } from "../../store/language-slice";
+import styled from "styled-components";
+
+const FooterWrapper = styled.footer`
+  background: #2a2a2a;
+  padding-left: 130px;
+  padding-top: 150px;
+  padding-bottom: 150px;
+
+  font-family: "Barlow";
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+
+  a:visited {
+    color: #fff;
+  }
+`;
+
+const TopSection = styled.section`
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 70px;
+`;
+
+const Header = styled.span`
+  font-family: "Kelson Sans";
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 48px;
+  max-width: 300px;
+`;
+
+const Socials = styled.div`
+  a {
+    margin-right: 20px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.24);
+  }
+  a:hover {
+    color: rgba(255, 255, 255, 0.75);
+  }
+`;
+
+const LanguageWrapper = styled.div`
+  padding-right: 130px;
+`;
+
+const LanguageItem = styled.span`
+  padding-right: 20px;
+  user-select: none;
+  cursor: pointer;
+  opacity: 0.32;
+
+  ${({ active }) =>
+    active &&
+    `
+    opacity: 1;
+  `}
+  &:hover {
+    opacity: 1;
+  }
+`;
+
+const MiddleSection = styled.section`
+  display: flex;
+  justify-content: space-between;
+`;
+const OvalWrapper = styled.div`
+  position: relative;
+  margin-right: 130px;
+
+  > * {
+    &:nth-child(2) {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+`;
+
+const BottomSection = styled.section`
+  position: relative;
+  display: flex;
+  top: 100px;
+  justify-content: space-between;
+`;
+const Copyrights = styled.div`
+  span {
+    padding-right: 30px;
+  }
+`;
+const Credits = styled.div`
+  padding-right: 130px;
+
+  span {
+    font-family: "Barlow";
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    padding-right: 15px;
+  }
+`;
 const Footer = () => {
   const dispatch = useDispatch();
 
@@ -37,73 +139,95 @@ const Footer = () => {
   }, []);
 
   return (
-    <footer>
-      <section className={classes.topSection}>
-        <span className={classes.header}>{title}</span>
-        <div className={classes.socials}>
+    <FooterWrapper>
+      <TopSection>
+        <Header>{title}</Header>
+        <Socials>
           <a href="/">Facebook</a>
           <a href="/">Instagram</a>
-        </div>
-        <div className={classes.lang}>
-          <span
-            className={`${classes["lang-item"]} ${
-              language === "PL" ? classes.active : classes.inactive
-            } `}
+        </Socials>
+        <LanguageWrapper>
+          <LanguageItem
+            active={language === "PL"}
             onClick={languageChangeHandler}
           >
             PL
-          </span>
-          <span
-            className={`${classes["lang-item"]} ${
-              language === "EN" ? classes.active : classes.inactive
-            } `}
+          </LanguageItem>
+          <LanguageItem
+            active={language === "EN"}
             onClick={languageChangeHandler}
           >
             EN
-          </span>
-          <span
-            className={`${classes["lang-item"]} ${
-              language === "RU" ? classes.active : classes.inactive
-            } `}
+          </LanguageItem>
+          <LanguageItem
+            active={language === "RU"}
             onClick={languageChangeHandler}
           >
             RU
-          </span>
-        </div>
-      </section>
+          </LanguageItem>
+        </LanguageWrapper>
+      </TopSection>
 
-      <section className={classes.middleSection}>
+      <MiddleSection>
         <Navigation
           title={firstTab.title}
-          links={firstTab.names.map((item, index) => ({ link: item, id: index }))}
+          links={firstTab.names.map((item, index) => ({
+            link: item,
+            id: index,
+          }))}
         />
-        <Navigation title={secondTab.title} links={secondTab.names.map((item, index) => ({ link: item, id: index }))} />
+        <Navigation
+          title={secondTab.title}
+          links={secondTab.names.map((item, index) => ({
+            link: item,
+            id: index,
+          }))}
+        />
         <Navigation
           title={thirdTab.title}
-          links={thirdTab.names.map((item, index) => ({ link: item, id: index }))}        />
+          links={thirdTab.names.map((item, index) => ({
+            link: item,
+            id: index,
+          }))}
+        />
         <Navigation
           title={fourthTab.title}
-          links={thirdTab.names.map((item, index) => ({ link: item, id: index }))}        />
+          links={thirdTab.names.map((item, index) => ({
+            link: item,
+            id: index,
+          }))}
+        />
 
-
-        <div className={classes["oval-wrapper"]}>
+        <OvalWrapper>
           <img src={oval} alt="oval"></img>
-          <img src={arrow} alt="arrow" className={classes.arrow}></img>
-        </div>
-      </section>
+          <img src={arrow} alt="arrow"></img>
+        </OvalWrapper>
+      </MiddleSection>
 
-      <section className={classes.bottomSection}>
-        <div className={classes.copyrights}>
+      <BottomSection>
+        <Copyrights>
           <span>&#169; 2020 NuPowerHouse - all rights reserved.</span>
-          <span> {language==='PL' ? 'Polityka prywatności' : language==='EN' ? 'Privacy policy' : 'политика конфиденциальности'}</span>
-        </div>
-        <div className={classes.credits}>
+          <span>
+            {language === "PL"
+              ? "Polityka prywatności"
+              : language === "EN"
+              ? "Privacy policy"
+              : "политика конфиденциальности"}
+          </span>
+        </Copyrights>
+        <Credits>
           <span>&#8901; {time}</span>
-          <span>{language==='PL' ? 'Realizacja' : language==='EN' ? 'Realization' : 'реализация'}</span>
+          <span>
+            {language === "PL"
+              ? "Realizacja"
+              : language === "EN"
+              ? "Realization"
+              : "реализация"}
+          </span>
           <img src={logo} alt="empressia logo"></img>
-        </div>
-      </section>
-    </footer>
+        </Credits>
+      </BottomSection>
+    </FooterWrapper>
   );
 };
 
