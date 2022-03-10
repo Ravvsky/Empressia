@@ -1,4 +1,9 @@
-
+@font-face {
+  font-family: 'Kelson Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/public/fonts/Kelson\ Sans\ Light.otf');
+}
 body {
   
   margin: 0;
