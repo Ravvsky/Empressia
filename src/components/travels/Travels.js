@@ -1,5 +1,4 @@
 import Slide from "./Slide";
-import classes from "./travels.module.css";
 import { tns } from "tiny-slider";
 import { useEffect } from "react";
 import "./slider.css";
@@ -7,6 +6,15 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleLeft } from "@fortawesome/free-solid-svg-icons";
 import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
 import { useSelector } from "react-redux";
+import styled from 'styled-components'
+
+const TravelsWrapper = styled.section`
+    margin-top: 216px;
+    margin-bottom: 117px;
+    position: relative;
+    padding-left: 35%;
+`
+
 
 const Travels = () => {
   const language = useSelector((state) => state.language.language);
@@ -28,7 +36,7 @@ const Travels = () => {
   }, []);
 
   return (
-    <section className={classes.travels}>
+    <TravelsWrapper>
       <div className="arrows">
         <button className="arrow left-arrow">
           <FontAwesomeIcon icon={faAngleLeft} />
@@ -48,7 +56,7 @@ const Travels = () => {
           />
         ))}
       </div>
-    </section>
+    </TravelsWrapper>
   );
 };
 
