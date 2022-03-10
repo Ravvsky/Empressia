@@ -6,8 +6,8 @@
   }
   
   .pagi {
-    margin-right: 130px;
-    margin-left: 130px;
+    margin-right: 13rem;
+    margin-left: 13rem;
     width: unset !important;
     display: flex;
     justify-content: space-between;
@@ -35,14 +35,15 @@
     background-color: white;
     color: black;
     height: 100% !important;
-    width: 120px !important;
-    border-radius: 40px !important;
+    width: 12rem !important;
+    border-radius: 4rem !important;
     text-align: center;
     overflow: visible;
     white-space: normal;
     text-indent: 0%;
-    padding-top: 20px;
-    padding-bottom: 40px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-size: 1.6rem
   }
