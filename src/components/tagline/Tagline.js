@@ -4,8 +4,8 @@ import styled from 'styled-components'
 const Taglines = styled.section`
 h2{font-family: 'Kelson Sans';
 font-weight: 600;
-font-size: 96px;
-line-height: 112px;
+font-size: 9.6rem;
+line-height: 11.2rem;
 white-space: nowrap;
 text-transform: uppercase;
 color: #000;}
@@ -21,12 +21,8 @@ color: #000;}
 
   &:nth-child(2){
   margin-top: 0px;
-}
-}
-
-
+}}
 `
-
 const Tagline = () => {
   const text =
     "You dream it. We plan it. — You dream it. We plan it. — You dream it. We plan it.";

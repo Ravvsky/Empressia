@@ -9,8 +9,8 @@ import { useSelector } from "react-redux";
 import styled from 'styled-components'
 
 const TravelsWrapper = styled.section`
-    margin-top: 216px;
-    margin-bottom: 117px;
+    margin-top: 21.6rem;
+    margin-bottom: 11.7rem;
     position: relative;
     padding-left: 35%;
 `

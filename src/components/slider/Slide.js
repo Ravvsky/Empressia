@@ -6,7 +6,7 @@ import styled from "styled-components";
 const ContentWrapper = styled.div`
   font-weight: 600;
   font-family: "Kelson Sans";
-  line-height: 58px;
+  line-height: 5.8rem;
   width: 100%;
   height: 90vh;
   background: black;
@@ -28,15 +28,15 @@ const Main = styled.main`
   position: absolute;
   bottom: 50%;
   transform: translate(0%, 50%);
-  margin-left: 130px;
+  margin-left: 13rem;
   display: flex;
   flex-direction: column;
 
   > span {
     font-family: "Barlow";
     font-weight: 500;
-    font-size: 14px;
-    line-height: 17px;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
   }
 `;
 const Headers = styled.div`
@@ -44,8 +44,8 @@ const Headers = styled.div`
 
   > h1 {
     font-family: "Kelson Sans";
-    font-size: 72px;
-    line-height: 80px;
+    font-size: 7.2rem;
+    line-height: 8rem;
     margin: 0;
   }
 
@@ -53,24 +53,26 @@ const Headers = styled.div`
     font-family: "Barlow";
     font-weight: 700;
     text-transform: uppercase;
-    font-size: 40px;
+    font-size: 4rem;
     letter-spacing: 2px;
     margin: 0;
   }
 `;
 
 const Keypoints = styled.div`
-  margin-top: 32px;
+  margin-top: 3.2rem;
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  line-height: 17px;
+  gap: 1rem;
+  line-height: 1.7rem;
+  font-size: 1.6rem;
 `;
 
 const IconWrapper = styled.div`
-  margin-right: 16px;
+  margin-right: 1.6rem;
   color: #4a5568;
   display: inline-block;
+  font-size: 1.6rem;
 `;
 const Slide = (props) => {
   return (

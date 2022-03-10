@@ -7,8 +7,8 @@ const Container = styled.section`
   position: relative;
   text-align: center;
   color: white;
-  height: 600px;
-  margin-bottom: 100px;
+  height: 60rem;
+  margin-bottom: 10rem;
 
   img {
     width: 100%;
@@ -19,7 +19,7 @@ const Container = styled.section`
 
 const BackgroundWrapper = styled.div`
   overflow: hidden;
-  height: 600px;
+  height: 60rem;
 `;
 
 const QuoteWrapper = styled.div`
@@ -29,11 +29,11 @@ const QuoteWrapper = styled.div`
   transform: translate(-50%, -50%);
   font-family: "Kelson Sans";
   font-weight: 600;
-  font-size: 48px;
-  line-height: 58px;
-  max-width: 900px;
+  font-size: 4.8rem;
+  line-height: 5.8rem;
+  max-width: 90rem;
 
-  p {max-width: 630px}
+  p {max-width: 63rem}
 `;
 
 const Quote = () => {

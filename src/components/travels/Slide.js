@@ -9,8 +9,8 @@ const ImageWrapper = styled.div`
 position: relative ;
 
 img{
-  width: 632px;
-  height: 632px;
+  width: 63.2rem;
+  height: 63.2rem;
   object-fit: cover;
 }
 `
@@ -22,8 +22,8 @@ const Number = styled.span`
   transform: translate(-50%, -50%);
   color: #fff;
   font-family: "Minion 3 Display", serif;
-  font-size: 360px;
-  line-height: 525px;
+  font-size: 36rem;
+  line-height: 52.5rem;
 `
 const Content = styled.div`
   background-color: #fff;
@@ -31,30 +31,30 @@ const Content = styled.div`
   top: 50%;
   left: 60%;
   transform: translate(-50%, -50%);
-  width: 300px;
-  height: 380px;
-  padding: 70px 148px 70px 74px;
+  width: 30rem;
+  height: 38rem;
+  padding: 7rem 14.8rem 7rem 7.4rem;
   overflow: hidden;
 
 
 
   span{
-    bottom: 70px;
+    bottom: 7rem;
   display: block;
-  max-width: 360px;
-  width: 360px;
+  max-width: 36rem;
+  width: 36rem;
   font-family: "Barlow";
   font-weight: 500;
-  font-size: 16px;
-  line-height: 30px;
+  font-size: 1.6rem;
+  line-height: 3rem;
   color: #767676;
   }
 `
 const Title = styled.div`
   font-family: "Kelson Sans";
   font-weight: 600;
-  font-size: 48px;
-  line-height: 58px;
+  font-size: 4.8rem;
+  line-height: 5.8rem;
   color: #000000;
   p{
     margin: 0

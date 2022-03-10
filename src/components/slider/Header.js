@@ -5,24 +5,22 @@ import { useDispatch, useSelector } from "react-redux";
 import { languageActions } from "../../store/language-slice";
 import { useState } from "react";
 import styled from "styled-components";
-import { isVisible } from "@testing-library/user-event/dist/utils";
 
 const HeaderContainer = styled.header`
-  height: 83px;
-  margin-top: 46px;
+  height: 8.3rem;
+  margin-top: 4.6rem;
   display: flex;
   justify-content: space-between;
-  color: #fff;
   font-family: "Barlow";
 `;
 
 const Contact = styled.div`
   position: relative;
-  top: calc(50% - 17px / 2 - 0.5px);
-  font-size: 14px;
+  top: calc(50% - 1.7rem / 2 - 0.5px);
+  font-size: 1.4rem;
   display: flex;
-  gap: 20px;
-  margin-left: 130px;
+  gap: 2rem;
+  margin-left: 13rem;
 `;
 
 const Icon = styled.span`
@@ -37,7 +35,7 @@ const Lang = styled.span`
 
 const FAIcon = styled.div`
   opacity: 0.56;
-  margin-left: 10px;
+  margin-left: 1rem;
 `;
 
 const LanguageChange = styled.div`
@@ -46,18 +44,18 @@ const LanguageChange = styled.div`
   color: black;
   background-color: white;
   height: fit-content;
-  margin-top: 30px;
+  margin-top: 3rem;
   position: relative;
-  right: 50px;
+  right: 5rem;
   ${(props) => !props.isVisible && `opacity: 0`}
 `;
 
 const LanguageItem = styled.span`
-  font-size: 14px;
+  font-size: 1.4rem;
   font-family: "Barlow";
   font-weight: 600;
-  padding: 5px 0;
-  padding: 15px 20px;
+  padding: 0.5px 0;
+  padding: 1.5rem 2rem;
   &:hover {
     background: rgb(219, 219, 219);
   };
@@ -66,30 +64,29 @@ const LanguageItem = styled.span`
 
 const Logo = styled.div`
   align-self: flex-end;
-  margin-right: 180px;
+  margin-right: 18rem;
 `;
 
 const Navigation = styled.div`
   position: relative;
-  top: calc(50% - 17px / 2 - 0.5px);
-  color: white;
+  top: calc(50% - 1.7rem / 2 - 0.5px);
   font-family: "Barlow";
-  font-size: 14px;
+  font-size: 1.4rem;
   font-weight: 600;
   display: flex;
-  gap: 20px;
-  margin-right: 170px;
+  gap: 2rem;
+  margin-right: 17rem;
 `;
 const HamburgerLines = styled.div`
   display: block;
   position: absolute;
-  height: 8px;
-  width: 14px;
-  bottom: 40px;
+  height: 0.8rem;
+  width: 1.4rem;
+  bottom: 4rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 26px 23px;
+  padding: 2.6rem 2.3rem;
   border-radius: 50%;
   border: 1px solid rgba(255, 255, 255, 0.4);
   cursor: pointer;
@@ -98,7 +95,7 @@ const Line = styled.span`
   display: block;
   height: 2px;
   width: 100%;
-  border-radius: 10px;
+  border-radius: 1rem;
   background: #4a5568;
 `;
 const Header = (props) => {

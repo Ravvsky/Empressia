@@ -10,14 +10,14 @@ import styled from "styled-components";
 
 const FooterWrapper = styled.footer`
   background: #2a2a2a;
-  padding-left: 130px;
-  padding-top: 150px;
-  padding-bottom: 150px;
+  padding-left: 13rem;
+  padding-top: 15rem;
+  padding-bottom: 15rem;
 
   font-family: "Barlow";
   font-weight: 600;
-  font-size: 14px;
-  line-height: 17px;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
 
   a:visited {
     color: #fff;
@@ -27,21 +27,21 @@ const FooterWrapper = styled.footer`
 const TopSection = styled.section`
   display: flex;
   justify-content: space-between;
-  padding-bottom: 70px;
+  padding-bottom: 7rem;
 `;
 
 const Header = styled.span`
   font-family: "Kelson Sans";
   font-weight: 600;
-  font-size: 40px;
-  line-height: 48px;
-  max-width: 300px;
+  font-size: 4rem;
+  line-height: 4.8rem;
+  max-width: 30rem;
 `;
 
 const Socials = styled.div`
   a {
-    margin-right: 20px;
-    padding-bottom: 5px;
+    margin-right: 2rem;
+    padding-bottom: 0.5rem;
     border-bottom: 1px solid rgba(255, 255, 255, 0.24);
   }
   a:hover {
@@ -50,11 +50,11 @@ const Socials = styled.div`
 `;
 
 const LanguageWrapper = styled.div`
-  padding-right: 130px;
+  padding-right: 13rem;
 `;
 
 const LanguageItem = styled.span`
-  padding-right: 20px;
+  padding-right: 2rem;
   user-select: none;
   cursor: pointer;
   opacity: 0.32;
@@ -75,7 +75,7 @@ const MiddleSection = styled.section`
 `;
 const OvalWrapper = styled.div`
   position: relative;
-  margin-right: 130px;
+  margin-right: 13rem;
 
   > * {
     &:nth-child(2) {
@@ -90,23 +90,23 @@ const OvalWrapper = styled.div`
 const BottomSection = styled.section`
   position: relative;
   display: flex;
-  top: 100px;
+  top: 10rem;
   justify-content: space-between;
 `;
 const Copyrights = styled.div`
   span {
-    padding-right: 30px;
+    padding-right: 3rem;
   }
 `;
 const Credits = styled.div`
-  padding-right: 130px;
+  padding-right: 13rem;
 
   span {
     font-family: "Barlow";
     font-weight: 600;
-    font-size: 14px;
-    line-height: 17px;
-    padding-right: 15px;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    padding-right: 1.5rem;
   }
 `;
 const Footer = () => {

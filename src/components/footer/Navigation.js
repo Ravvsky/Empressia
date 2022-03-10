@@ -7,8 +7,8 @@ const NavigationWrapper = styled.section`
 const Title = styled.span`
   font-family: "Barlow";
   font-weight: 600;
-  font-size: 14px;
-  line-height: 17px;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
   user-select: none;
 `;
 const List = styled.ul`
@@ -19,8 +19,8 @@ const List = styled.ul`
 const ListItem = styled.li`
   font-family: "Barlow";
   font-weight: 500;
-  font-size: 20px;
-  line-height: 32px;
+  font-size: 2rem;
+  line-height: 3.2rem;
 
   a {
     text-decoration: none;

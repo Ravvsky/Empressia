@@ -6,14 +6,15 @@ const ContentWrapper = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 328px;
-  margin-top: 200px;
+  gap: 32.8rem;
+  margin-top: 20rem;
+  margin-bottom: 20rem;
   cursor: url(${cursor}), auto;
 `;
 const LeftSection = styled.section`
   > img {
-    max-width: 400px;
-    max-height: 584px;
+    max-width: 40rem;
+    max-height: 58.4rem;
   }
 `;
 const RightSection = styled.section`
@@ -21,9 +22,9 @@ const RightSection = styled.section`
     font-family: "Kelson Sans";
     font-style: normal;
     font-weight: 600;
-    font-size: 64px;
-    line-height: 72px;
-    max-width: 420px;
+    font-size: 6.4rem;
+    line-height: 7.2rem;
+    max-width: 42rem;
     text-transform: uppercase;
     color: #000;
   }
@@ -31,18 +32,18 @@ const RightSection = styled.section`
   > span {
     font-family: "Barlow";
     font-weight: 500;
-    font-size: 20px;
-    line-height: 32px;
+    font-size: 2rem;
+    line-height: 3.2rem;
     color: #767676;
-    max-width: 332px;
+    max-width: 33.2rem;
     display: block;
-    margin-top: 46px;
-    margin-bottom: 128px;
+    margin-top: 4.6rem;
+    margin-bottom: 12.8rem;
   }
 
   > img {
-    max-width: 400px;
-    max-height: 584px;
+    max-width: 40rem;
+    max-height: 58.4rem;
   }
 `;
 
