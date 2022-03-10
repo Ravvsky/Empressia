@@ -1,4 +1,4 @@
-{ 
+{
   "homepage": "https://ravvsky.github.io/Empressia/",
   "name": "empresia_project",
   "version": "0.1.0",
@@ -19,6 +19,7 @@
     "react-redux": "^7.2.6",
     "react-scripts": "5.0.0",
     "react-scroll-parallax": "^3.0.4",
+    "styled-components": "^5.3.3",
     "swiper": "^8.0.7",
     "tiny-slider": "^2.9.4",
     "web-vitals": "^2.1.4"
