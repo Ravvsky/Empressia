@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Empressia/static/css/main.fe086652.css",
-    "main.js": "/Empressia/static/js/main.a18f38ad.js",
+    "main.css": "/Empressia/static/css/main.2ee89f54.css",
+    "main.js": "/Empressia/static/js/main.78b03294.js",
     "static/media/slider-image.png": "/Empressia/static/media/slider-image.3766a3ebd1f0d5720695.png",
     "static/media/quote-background.png": "/Empressia/static/media/quote-background.d8af46bff3e688f5544e.png",
     "static/media/image-travel-01.png": "/Empressia/static/media/image-travel-01.be7914eea82b2e87e9c9.png",
@@ -16,15 +16,15 @@
     "static/media/logo.svg": "/Empressia/static/media/logo.e336c79a05f7ba7db0abfd6b481e5263.svg",
     "static/media/slider-image1.png": "/Empressia/static/media/slider-image1.5dd9fc14425f3ab3073a.png",
     "static/media/empressia-logo.svg": "/Empressia/static/media/empressia-logo.9fd08fc9428a5b5b764774da0b39b5a8.svg",
-    "static/media/compass.svg": "/Empressia/static/media/compass.f9bd416e24c5b0cc4df6.svg",
+    "static/media/compass.svg": "/Empressia/static/media/compass.f9bd416e24c5b0cc4df61ff43c9e0334.svg",
     "static/media/oval.svg": "/Empressia/static/media/oval.8c64f70f0321f8871f02370f572a825d.svg",
     "index.html": "/Empressia/index.html",
     "static/media/chevron-left.svg": "/Empressia/static/media/chevron-left.b06921589ca5c2ab359ff511ac88858f.svg",
-    "main.fe086652.css.map": "/Empressia/static/css/main.fe086652.css.map",
-    "main.a18f38ad.js.map": "/Empressia/static/js/main.a18f38ad.js.map"
+    "main.2ee89f54.css.map": "/Empressia/static/css/main.2ee89f54.css.map",
+    "main.78b03294.js.map": "/Empressia/static/js/main.78b03294.js.map"
   },
   "entrypoints": [
-    "static/css/main.fe086652.css",
-    "static/js/main.a18f38ad.js"
+    "static/css/main.2ee89f54.css",
+    "static/js/main.78b03294.js"
   ]
 }
