@@ -10,11 +10,25 @@ const ContentWrapper = styled.section`
   margin-top: 20rem;
   margin-bottom: 20rem;
   cursor: url(${cursor}), auto;
+
+  @media(max-width: 480px){
+
+    gap: 5rem;
+    flex-direction: column;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+  }
 `;
 const LeftSection = styled.section`
   > img {
     max-width: 40rem;
     max-height: 58.4rem;
+
+    @media(max-width: 480px){
+      max-width: 100%;
+      width: 35rem;
+      margin: 0 auto;
+    }
   }
 `;
 const RightSection = styled.section`
@@ -44,6 +58,30 @@ const RightSection = styled.section`
   > img {
     max-width: 40rem;
     max-height: 58.4rem;
+  }
+
+  @media(max-width: 480px){
+
+    >h2{
+      font-size: 5rem;
+      max-width: 40rem;
+      margin-left: 3rem;
+      margin-right: 3rem;
+    }
+
+    >span{
+      font-size: 1.8rem;
+      margin-left: 3rem;
+      margin-right: 3rem;
+    }
+
+    > img{
+      max-width: 100%;
+      width: 35rem;
+      display: block;
+      margin: 0 auto
+
+    }
   }
 `;
 

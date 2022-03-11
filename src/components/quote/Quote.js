@@ -15,11 +15,19 @@ const Container = styled.section`
     height: 100%;
     object-fit: cover;
   }
+
+  @media(max-width: 480px){
+    height: 30rem;
+  }
 `;
 
 const BackgroundWrapper = styled.div`
   overflow: hidden;
   height: 60rem;
+
+  @media(max-width: 480px){
+    height: 30rem;
+  }
 `;
 
 const QuoteWrapper = styled.div`
@@ -34,6 +42,12 @@ const QuoteWrapper = styled.div`
   max-width: 90rem;
 
   p {max-width: 63rem}
+
+  @media(max-width: 480px){
+    font-size: 2.4rem;
+    line-height: 2.8rem;
+    width: 35rem;
+  }
 `;
 
 const Quote = () => {

@@ -8,7 +8,14 @@ font-size: 9.6rem;
 line-height: 11.2rem;
 white-space: nowrap;
 text-transform: uppercase;
-color: #000;}
+color: #000;
+
+@media(max-width: 480px){
+  font-size: 5rem;
+  line-height: 6rem;
+  margin-bottom: 10rem;
+}
+}
 
 :nth-child(1){
   margin-bottom: 0px;

@@ -45,5 +45,13 @@
     padding-bottom: 4rem;
     padding-left: 2rem;
     padding-right: 2rem;
-    font-size: 1.6rem
+    font-size: 1.6rem;
+  }
+
+  @media (max-width: 480px) {
+
+    .pagi-wraper{
+      visibility: hidden;
+    }
+    
   }

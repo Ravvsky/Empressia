@@ -22,12 +22,17 @@ const FooterWrapper = styled.footer`
   a:visited {
     color: #fff;
   }
+
+  @media(max-width: 480px){
+    padding-left: 2rem;
+  }
 `;
 
 const TopSection = styled.section`
   display: flex;
   justify-content: space-between;
   padding-bottom: 7rem;
+  width: 48rem;
 `;
 
 const Header = styled.span`
@@ -36,6 +41,11 @@ const Header = styled.span`
   font-size: 4rem;
   line-height: 4.8rem;
   max-width: 30rem;
+
+  @media(max-width: 480px){
+    font-size: 2rem;
+    line-height: 3rem;
+  }
 `;
 
 const Socials = styled.div`
@@ -47,10 +57,21 @@ const Socials = styled.div`
   a:hover {
     color: rgba(255, 255, 255, 0.75);
   }
+
+  @media(max-width: 480px){
+    /* margin-left: 10rem; */
+    display: flex;
+    flex-direction: column;
+  }
 `;
 
 const LanguageWrapper = styled.div`
   padding-right: 13rem;
+
+  @media(max-width: 480px){
+    display: flex;
+    flex-direction: column;
+  }
 `;
 
 const LanguageItem = styled.span`
@@ -72,6 +93,10 @@ const LanguageItem = styled.span`
 const MiddleSection = styled.section`
   display: flex;
   justify-content: space-between;
+
+  @media(max-width: 480px){
+    flex-wrap: wrap ;
+}
 `;
 const OvalWrapper = styled.div`
   position: relative;
@@ -85,6 +110,12 @@ const OvalWrapper = styled.div`
       transform: translate(-50%, -50%);
     }
   }
+
+  @media(max-width: 480px){
+    display: none;
+
+  
+  }
 `;
 
 const BottomSection = styled.section`
@@ -97,6 +128,14 @@ const Copyrights = styled.div`
   span {
     padding-right: 3rem;
   }
+
+  @media(max-width: 480px){
+    font-size: 1rem;
+
+    span{
+      padding-right: 1rem;
+    }
+  }
 `;
 const Credits = styled.div`
   padding-right: 13rem;
@@ -107,6 +146,14 @@ const Credits = styled.div`
     font-size: 1.4rem;
     line-height: 1.7rem;
     padding-right: 1.5rem;
+  }
+
+  @media(max-width:480px){
+    padding-right: 2rem;
+
+    span{
+      font-size: 1rem;
+    }
   }
 `;
 const Footer = () => {

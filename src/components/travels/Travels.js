@@ -13,6 +13,10 @@ const TravelsWrapper = styled.section`
     margin-bottom: 11.7rem;
     position: relative;
     padding-left: 35%;
+
+    @media(max-width: 480px){
+      padding-left: 0;
+    }
 `
 
 
@@ -27,7 +31,7 @@ const Travels = () => {
       items: 1.1,
       slideBy: 1,
       mouseDrag: true,
-      autoplay: true,
+      autoplay: false,
       autoplayTimeout: 4000,
       nav: false,
       autoplayButtonOutput: false,

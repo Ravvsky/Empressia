@@ -1,7 +1,13 @@
 import styled from "styled-components";
+import PropTypes from "prop-types";
 
 const NavigationWrapper = styled.section`
-  margin-top: 100px;
+  margin-top: 10rem;
+
+  @media(max-width: 480px){
+    margin-top: 2rem;
+    width: 40%;
+  }
 `;
 
 const Title = styled.span`
@@ -14,6 +20,9 @@ const Title = styled.span`
 const List = styled.ul`
   list-style-type: none;
   padding: 0;
+
+
+
 `;
 
 const ListItem = styled.li`
@@ -21,7 +30,7 @@ const ListItem = styled.li`
   font-weight: 500;
   font-size: 2rem;
   line-height: 3.2rem;
-
+  
   a {
     text-decoration: none;
     color: #fff;
@@ -31,6 +40,8 @@ const ListItem = styled.li`
     color:rgba(255, 255, 255, 0.75)
 
   }
+
+  
 `;
 const Navigation = (props) => {
   const title = props.title;
@@ -49,4 +60,9 @@ const Navigation = (props) => {
   );
 };
 
+Navigation.propTypes = {
+  title: PropTypes.string,
+  
+  links: PropTypes.arrayOf(PropTypes.object)
+};
 export default Navigation;

@@ -32,3 +32,10 @@
 
 }
 
+
+@media(max-width: 480px){
+
+    .arrows, .left-arrow, .right-arrow, .arrow{
+        display: none;
+    }
+}

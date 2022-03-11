@@ -2,6 +2,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleCheck } from "@fortawesome/free-regular-svg-icons";
 import "swiper/css/pagination";
 import styled from "styled-components";
+import PropTypes from "prop-types";
+
 
 const ContentWrapper = styled.div`
   font-weight: 600;
@@ -38,9 +40,17 @@ const Main = styled.main`
     font-size: 1.4rem;
     line-height: 1.7rem;
   }
+
+  @media (max-width: 480px) {
+    margin-left: 2rem;
+    bottom: 35%;
+    > span {
+      font-size: 1.2rem;
+    }
+  }
 `;
 const Headers = styled.div`
-  margin-bottom: 28px;
+  margin-bottom: 2.8rem;
 
   > h1 {
     font-family: "Kelson Sans";
@@ -57,6 +67,18 @@ const Headers = styled.div`
     letter-spacing: 2px;
     margin: 0;
   }
+
+  @media(max-width: 480px){
+ 
+    > h1{
+      font-size: 5rem;
+      line-height: 6rem;
+    }
+
+    > h2{
+      font-size: 2rem;
+    }
+  }
 `;
 
 const Keypoints = styled.div`
@@ -66,6 +88,13 @@ const Keypoints = styled.div`
   gap: 1rem;
   line-height: 1.7rem;
   font-size: 1.6rem;
+
+  @media(max-width: 480px){
+    div {
+      display: flex;
+      margin-right: 1.2rem;
+    }
+}
 `;
 
 const IconWrapper = styled.div`
@@ -101,5 +130,10 @@ const Slide = (props) => {
     </ContentWrapper>
   );
 };
-
+Slide.propTypes = {
+  topTitle: PropTypes.string,
+  bottomTitle: PropTypes.string,
+  middleText: PropTypes.string,
+  keypoints: PropTypes.arrayOf(PropTypes.string)
+};
 export default Slide;

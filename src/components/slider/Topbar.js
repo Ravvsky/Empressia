@@ -18,6 +18,11 @@ font-weight: 600;
 font-size: 1.4rem;
 line-height: 1.7rem;
 margin-right: -10rem;
+
+@media(max-width: 480px){
+  margin-right: initial;
+  font-size: 1.2rem;
+}
 `
 
 const Topbar = () => {
@@ -30,5 +35,7 @@ const Topbar = () => {
     </Wrapper>
   );
 };
+
+
 
 export default Topbar;

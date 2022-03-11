@@ -12,6 +12,10 @@ const HeaderContainer = styled.header`
   display: flex;
   justify-content: space-between;
   font-family: "Barlow";
+
+  @media(max-width: 480px){
+    margin-top: 1rem;
+  }
 `;
 
 const Contact = styled.div`
@@ -21,6 +25,17 @@ const Contact = styled.div`
   display: flex;
   gap: 2rem;
   margin-left: 13rem;
+
+  @media(max-width: 480px){
+    margin-left: 2rem;
+    font-size: 1.2rem;
+    gap: 1rem;
+    display: block;
+    div{
+      padding-bottom: 0.25rem;
+      width: max-content ;
+    }
+  }
 `;
 
 const Icon = styled.span`
@@ -31,6 +46,10 @@ const Lang = styled.span`
   display: flex;
   gap: 4px;
   cursor: pointer;
+
+  @media(max-width: 480px){
+    display: none ;
+  }
 `;
 
 const FAIcon = styled.div`
@@ -47,7 +66,7 @@ const LanguageChange = styled.div`
   margin-top: 3rem;
   position: relative;
   right: 5rem;
-  ${(props) => !props.isVisible && `opacity: 0`}
+  ${(props) => !props.isVisible && `display: none`}
 `;
 
 const LanguageItem = styled.span`
@@ -61,10 +80,18 @@ const LanguageItem = styled.span`
   };
 `;
 
-
 const Logo = styled.div`
   align-self: flex-end;
   margin-right: 18rem;
+
+  @media(max-width: 480px){
+    margin-right: 2rem;
+    margin-left: 1rem;
+    margin-bottom: 0.5rem;
+    img{
+      max-width: 9rem;
+    }
+  }
 `;
 
 const Navigation = styled.div`
@@ -76,6 +103,10 @@ const Navigation = styled.div`
   display: flex;
   gap: 2rem;
   margin-right: 17rem;
+
+  @media(max-width: 480px){
+    span{display: none}
+  }
 `;
 const HamburgerLines = styled.div`
   display: block;
@@ -90,6 +121,11 @@ const HamburgerLines = styled.div`
   border-radius: 50%;
   border: 1px solid rgba(255, 255, 255, 0.4);
   cursor: pointer;
+
+  @media(max-width: 480px){
+    bottom: 5rem;
+    padding: 1.3rem 1.15rem;
+  }
 `;
 const Line = styled.span`
   display: block;
@@ -98,7 +134,7 @@ const Line = styled.span`
   border-radius: 1rem;
   background: #4a5568;
 `;
-const Header = (props) => {
+const Header = () => {
   
   const dispatch = useDispatch();
   const language = useSelector((state) => state.language.language);
